@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --okayu-dark: rgb(107, 55, 110);
+    --okayu-main: rgb(174,112,162);
+    --okayu-nav: rgba(214, 38, 240, 0.838);
+    --okayu-light: rgb(227,206,222);
+    --okayu-navbar: rgb(221, 208, 222);
+}
+@-ms-viewport{
+    width: device-width;
+  }
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    position: absolute;
+    width: 100vw;
+}
+a {
+    text-decoration: none;
+    color: var(--okayu-main)
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+}
+td {
+    padding: 0.5em 0.6em;
+    overflow-wrap: break-word;
+}
+th {
+    text-align: left;
+    padding: 0.5em 0.6em;
+    background: var(--okayu-main);
+    color: white;
+    text-transform: capitalize; 
+}
+.web-title {
+    font-size: 1.5em;
+    align-content: center;
+    margin: 10px 0 10px 5%;
+    color: var(--okayu-main)
+}
+.navbar-container {
+    width: 100vw;
+    height: 70px;
+    background-color: var(--okayu-navbar);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.navbar-menu {
+    margin-right: 10%;
+}
+.navbar-menu ul {
+    display: flex;
+    margin: 0;
+    padding: .5rem;
+}
+.navbar-menu li {
+    list-style: none;
+    margin: 0 10px;
+}
+.navbar-menu li a {
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: 500;
+    color: var(--okayu-dark);
+    display: block;
+    border-radius: .5rem;
+}
+.navbar-menu li a:hover {
+    color: white;
+    background-color: var(--okayu-main);
+}
+.toggle-button {
+    position: absolute;
+    top: 15px;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 30px;
+    height: 26px;
+    background-color: rgb(221, 208, 222);
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 85%;
+    background-color: var(--okayu-main);
+    border-radius: 10px;
+}
+.area-introduction {
+    position: static !important;
+    background-image: url("../assets/image/okayu_raining.png");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.intro-card {
+    color: var(--okayu-dark);
+    background: white;
+    width: 400px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 8%;
+    opacity: 0.6;
+    padding: 10px;
+    border-radius: 5px;
+}
+.intro-card p {
+    font-variant: oblique;
+}
+.card {
+    box-shadow: 0px 9px 10px 0px rgba(84, 84, 84, 0.78);
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid var(--okayu-light);
+}
+.profile {
+    display: flex;
+    align-items: center;
+    background: #ffff;
+    padding: 5px;
+}
+.overview {
+    width: 530px;
+    text-align: justify;
+    height: 80vh;
+}
+.overview h2 {
+    color: var(--okayu-main);
+    font-weight: 600;
+}
+.overview-p {
+    overflow-y: scroll;
+    height: 80%;
+    width: 100%;
+    font-size: 0.95em;
+    text-indent: 1em;
+}
+.area-profile, 
+.area-comrades {
+    position: relative;
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: auto;
+    flex-wrap: wrap;
+}
+.area-comrades {
+    flex-direction: column;
+    justify-content: center;
+}
+.pp-container {
+    margin-top: 40px;
+}
+.body-portrait {
+    height: 80vh;
+}
+.comrades-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+    width : 100%;
+}
+aside {
+    position: relative;
+    margin-bottom: 40px;
+}
+.profile-container {
+    margin: auto;
+    width: auto;
+}
+.pasfoto {
+    height: 140px;
+}
+.emblem-container {
+    height: 20%;
+}
+.emblem-container img {
+    height: 150px;
+}
+.comrades {
+    height: 302px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.comrades>q {
+    font-size: .92rem;
+    font-weight: 400;
+}
+.comrades>img {
+    width: 90px;
+    clip-path: circle();
+    margin-bottom: 40px;
+}
+footer {
+    position: relative;
+    font-size: 0.8rem;
+    text-align: center;
+    color: var(--okayu-main);
+}
+@media screen and (max-width: 425px) {
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-menu {
+        display: none;
+        /* width: 100%; */
+    }
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-menu li {
+        text-align: center;
+        background: rgb(221, 208, 222);
+    }
+    .navbar-menu li a {
+        padding: 0.5rem 1rem;
+    }
+    .navbar-menu.active {
+        display: flex;
+    }
+    .navbar-menu li:hover{
+        background-color: var(--okayu-main);
+    }
+    .navbar-menu li a:hover {
+        color: white;
+    }
+    .area-introduction{
+        justify-content: center;
+    }
+    .intro-card {
+        margin: 0;
+    }
+    .area-profile,
+    .area-comrades {
+        height: auto;
+        margin: 70px auto;
+        padding: 30px;
+    }
+    /* .area-profile {
+        flex-direction: column;
+        justify-content: space-around;
+    } */
+    .comrades-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .comrades{
+        margin: 30px;
+    }
+    .profile-container {
+        width: 60%;
+        margin: 3px;
+    }
+    .profile-container>table{
+        font-size: 0.5rem;
+    }
+    .pasfoto {
+        height: 159px;
+    }
+}
+
+@media screen and (max-width: 1227px) {
+    .area-profile {
+        height: auto;
+    }
+}
