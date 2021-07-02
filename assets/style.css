@@ -8,9 +8,6 @@
     --okayu-light: rgb(227,206,222);
     --okayu-navbar: rgb(221, 208, 222);
 }
-@-ms-viewport{
-    width: device-width;
-  }
 html {
     scroll-behavior: smooth;
 }
