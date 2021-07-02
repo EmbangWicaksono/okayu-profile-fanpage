@@ -157,19 +157,16 @@ th {
 .area-comrades {
     position: relative;
     width: 100vw;
-    height: 700px;
+    padding-top: 70px;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    overflow: auto;
     flex-wrap: wrap;
 }
 .area-comrades {
     flex-direction: column;
-    justify-content: center;
-}
-.pp-container {
-    margin-top: 40px;
+    justify-content: flex-start;
 }
 .body-portrait {
     height: 80vh;
@@ -189,14 +186,9 @@ aside {
     margin: auto;
     width: auto;
 }
-.pasfoto {
-    height: 140px;
-}
-.emblem-container {
-    height: 20%;
-}
 .emblem-container img {
     height: 150px;
+    margin-bottom: 2vh;
 }
 .comrades {
     height: 302px;
@@ -229,7 +221,6 @@ footer {
     }
     .navbar-menu {
         display: none;
-        /* width: 100%; */
     }
     .navbar-container {
         flex-direction: column;
@@ -268,10 +259,6 @@ footer {
         margin: 70px auto;
         padding: 30px;
     }
-    /* .area-profile {
-        flex-direction: column;
-        justify-content: space-around;
-    } */
     .comrades-container {
         flex-direction: column;
         justify-content: center;
